@@ -10,7 +10,7 @@
 <br />
 <br />
 
-<form action="Home/Lista" method="POST">
+<form action="Home/Lista" method="post">
     <fieldset>
         <legend>Informações de Usuario</legend>
 
@@ -18,24 +18,22 @@
         <div>
             <label for=" PessoaId">Codigo</label>
         </div>
-
         <div>
             <input type="number" value="@Model.PessoaId" name="PessoaId" />
         </div>
 
         <div>
-            <label for=" PessoaId">Nome</label>
+            <label for=" Name">Nome</label>
+        </div>
+        <div>
+            <input type="text" value="@Model.Name" name="Name" />
         </div>
 
         <div>
-            <input type="text" value="@Model.Name" name="PessoaId" />
+            <label for=" Tipo">Tipo</label>
         </div>
         <div>
-            <label for=" PessoaId">Tipo</label>
-        </div>
-
-        <div>
-            <input type="text" value="@Model.Tipo" name="PessoaId" />
+            <input type="text" value="@Model.Tipo" name="Tipo" />
         </div>
 
         <p><input type="submit" value="Enviar" /></p>

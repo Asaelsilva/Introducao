@@ -12,8 +12,8 @@ namespace Introducao.Controllers
             var pessoa = new Pessoa()
             {
                 PessoaId = 1,
-                Name = "Asael João",
-                Tipo = "Administrador"
+                Name = " Asael João ",
+                Tipo = " Administrador "
             };
 
             //Usando ViewData
@@ -34,8 +34,12 @@ namespace Introducao.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Lista()
+        public ActionResult Lista( int PessoaId, string Name, string Tipo)
         {
+            ViewData["PessoaId"] = PessoaId;
+            ViewData["Name"] = Name;
+            ViewData["Tipo"] = Tipo;
+
             return View();
         }
     }
