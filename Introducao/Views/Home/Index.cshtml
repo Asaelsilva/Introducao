@@ -1,0 +1,45 @@
+﻿@model Introducao.Models.Pessoa
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Curso de ASP MVC</h2>
+
+<p>Testando novas Possibilidades</p>
+<br />
+<br />
+
+<form action="Home/Lista" method="POST">
+    <fieldset>
+        <legend>Informações de Usuario</legend>
+
+
+        <div>
+            <label for=" PessoaId">Codigo</label>
+        </div>
+
+        <div>
+            <input type="number" value="@Model.PessoaId" name="PessoaId" />
+        </div>
+
+        <div>
+            <label for=" PessoaId">Nome</label>
+        </div>
+
+        <div>
+            <input type="text" value="@Model.Name" name="PessoaId" />
+        </div>
+        <div>
+            <label for=" PessoaId">Tipo</label>
+        </div>
+
+        <div>
+            <input type="text" value="@Model.Tipo" name="PessoaId" />
+        </div>
+
+        <p><input type="submit" value="Enviar" /></p>
+
+    </fieldset>
+</form>
+
