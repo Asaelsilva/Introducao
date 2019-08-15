@@ -17,7 +17,7 @@ namespace Introducao.Models
         public int Idade { get; set; }
         [RegularExpression(@"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*", ErrorMessage = "Digite um email valido")]
         public string Email { get; set; }
-        [RegularExpression(@"[a-zA-Z]{5,15}", ErrorMessage = "Somente palavras de 5 a 15 caracteres")]
+        [RegularExpression(@"[a-zA-Z]{3,15}", ErrorMessage = "Somente palavras de 5 a 15 caracteres")]
         [Required(ErrorMessage = "O Login é Obrigatorio")]
         [Remote("LoginUnico", "Usuario", ErrorMessage = "Login Já existe")]
         public string Login { get; set; }

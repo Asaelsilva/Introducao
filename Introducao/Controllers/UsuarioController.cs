@@ -50,9 +50,9 @@ namespace Introducao.Controllers
         {
             var bdExemplo = new Collection<string>
             {
-                "São paulo",
-                "Palmeiras",
-                "Corinthians"
+                "Asael",
+                "Lais",
+                "Bia"
             };
             return Json(bdExemplo.All( x => x.ToLower() != login.ToLower()), JsonRequestBehavior.AllowGet);
         }
